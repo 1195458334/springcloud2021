@@ -17,6 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <boot.version>2.2.2.RELEASE</boot.version>
     <junit.version>4.12</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <lombok.version>1.16.18</lombok.version>
@@ -100,6 +101,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.2.3.RELEASE</version>
         <configuration>
           <fork>true</fork>
           <addResources>true</addResources>
@@ -107,4 +109,11 @@
       </plugin>
     </plugins>
   </build>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>alimaven spring plugin</id>
+      <name>alimaven spring plugin</name>
+      <url>https://maven.aliyun.com/repository/spring-plugin</url>
+    </pluginRepository>
+  </pluginRepositories>
 </project>
