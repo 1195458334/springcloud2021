@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-api-commons" />
         <module name="cloud-provider-payment01" />
+        <module name="cloud-consumer-order80" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-api-commons" target="1.8" />
+      <module name="cloud-consumer-order80" target="1.8" />
       <module name="cloud-provider-payment01" target="1.8" />
       <module name="springcloud2021" target="1.8" />
     </bytecodeTargetLevel>
