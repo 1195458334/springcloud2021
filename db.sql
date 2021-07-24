@@ -39,7 +39,7 @@ INSERT INTO `payment` VALUES (35, 'atguigu002');
 
 SET FOREIGN_KEY_CHECKS = 1;
 
----seata
+-- seata
 -- the table to store GlobalSession data
 create database seata;
 USE seata;
@@ -95,7 +95,7 @@ create table `lock_table` (
   primary key(`row_key`)
 );
 
----seata biz
+-- seata biz
 create database seata_order;
 USE seata_order;
 CREATE TABLE `t_order`  (
