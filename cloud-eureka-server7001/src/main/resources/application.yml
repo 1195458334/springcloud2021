@@ -1,5 +1,8 @@
 server:
   port: 7001
+spring:
+  application:
+    name: cloud-eureka-service
 
 eureka:
   instance:
